@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown timer</title>
     <link rel="stylesheet" href="css/common.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <p>
+      <a href="index.html" class="main-link"><span>Go back</span></a>
+    </p>
 
     <input type="text" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
+    <button type="button" class="start-btn" data-start>Start</button>
 
     <div class="timer">
       <div class="field">
         <span class="value" data-days>00</span>
         <span class="label">Days</span>
       </div>
-      <div class="field">
+      <div class="field clock-column">
         <span class="value" data-hours>00</span>
-        <span class="label">Hours</span>
+        <span class="label clock-label">Hours</span>
       </div>
       <div class="field">
         <span class="value" data-minutes>00</span>
